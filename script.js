@@ -3,7 +3,7 @@ const songs = [
     {
         path: 'audio1.mp4',
         name: '11 de marzo',
-        artist: 'Hermes',
+        artist: 'By Hermes',
         cover: '1.png',
         lyrics: `La conocí al final del verano, ahora por Discord siempre nos curamos.
 Siempre vocea cuando nos peleamos, la mando pal diablo y de una nos calmamos.
@@ -35,10 +35,29 @@ Nanananananan, jajaj.
     {
         path: 'audio2.mp3',
         name: 'Mi cama', 
-        artist: 'Hermes', 
+        artist: 'By Hermes (tu marido😉)', 
         cover: '2.jpg',
-        lyrics: `Letra de la segunda canción aún no disponible.
-(Añade la letra aquí cuando esté lista)`
+        lyrics: `(Hermes voice)
+
+Pero mi amor, ¿por qué cerraste la llamada? Yo te llamé porque quería dormir contigo, pero ok… buenas noches… descansa.
+
+(Karen voice)
+
+Tenías que decírmelo desde un principio mi amor, pero… ¿qué hacemos entonces? ¿Vamos a dormir juntos sí o no?
+
+Y es que yo (yo yoo) te quiero aquí en mi cama, baby yo sé que tú me amas, por eso no me aguanto las ganas.
+
+Yo (yo yoo) te quiero aquí en mi cama, por eso cada vez que me llamas me duele que no estés en mi cama.
+
+Me duele que no estés en mi cama cuando me levanto por la mañana, por eso cada vez que me llamas escuchar tu voz me prende llamas.
+
+Y es que baby yo sé que te pasa lo mismo conmigo, y es que no puedo olvidar el tono de tu voz y el de tus gemidos.
+
+Solo quiero amarte, haría lo que fuera por abrazarte, mami yo te amo, solo déjame cuidarte y no te preocupes que no voy a maltratarte… bueno si tú quieres🫣
+
+Y es que yo (yo yoo) te quiero aquí en mi cama, baby yo sé que tú me amas, por eso no me aguanto las ganas.
+
+Yo (yo yoo) te quiero aquí en mi cama, por eso cada vez que me llamas me duele que no estés en mi cama.`
     }
 ];
 
