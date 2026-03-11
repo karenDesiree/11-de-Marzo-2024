@@ -1,106 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>for you</title>
+    <title>Spotihermes</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Font for a modern UI -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <audio src="audio1.mp4" id="audio"></audio>
-
-    <div class="music-player">
-        <div class="disk">
-
-
+    <!-- LOGIN VIEW -->
+    <div id="login-view" class="view-container active">
+        <div class="login-box">
+            <img src="logoPinguino.png" alt="Spotihermes Logo" class="app-logo">
+            <h1>Spotihermes</h1>
+            <p>Bienvenida mi amor. Ingresa la palabra secreta para entrar a nuestro rincón musical.</p>
+            <input type="password" id="password-input" placeholder="Contraseña">
+            <button class="btn primary-btn" onclick="checkPassword()">Entrar</button>
+            <p id="login-error" class="hidden">Contraseña incorrecta.</p>
         </div>
-        <h1 class="music-name">11 de Marzo</h1>
-        <p>Karen Desiree</p>
+    </div>
 
-        <div class="song-sider">
-            <input type="range" value="0" class="seek-bar">
-            <span class="current-time">00:00</span>
-            
+    <!-- LIBRARY VIEW -->
+    <div id="library-view" class="view-container hidden">
+        <div class="library-glass-panel">
+            <div class="library-hero">
+                <img src="logoPinguino.png" alt="Spotihermes" class="header-logo">
+                <div class="hero-text">
+                    <h2>Spotihermes</h2>
+                    <p>Playlist especial para ti, hermosa. Elige la canción que te preparé.</p>
+                </div>
+            </div>
+
+            <div class="library-list">
+                <!-- Card 1 -->
+                <div class="library-list-item" onclick="openPlayer(0)">
+                    <img src="1.png" alt="Cover 1" class="list-item-cover">
+                    <div class="list-item-info">
+                        <h3>11 de marzo</h3>
+                        <p>Hermes</p>
+                    </div>
+                    <div class="list-item-play">▶</div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="library-list-item" onclick="openPlayer(1)">
+                    <img src="2.jpg" alt="Cover 2" class="list-item-cover">
+                    <div class="list-item-info">
+                        <h3>Mi cama</h3>
+                        <p>Hermes</p>
+                    </div>
+                    <div class="list-item-play">▶</div>
+                </div>
+            </div>
         </div>
+    </div>
 
-        <div class="controls">
-            <button class="btn backward-btn"><img src="pre.png" alt=""></button>
-
-            <button class="play-btn pause">
-                <span></span>
-                <span></span>
-
-            </button>
-            <button class="btn backward-btn"><img src="nxt.png" alt=""></button>
-        </div>
-
+    <!-- PLAYER VIEW -->
+    <div id="player-view" class="view-container hidden">
+        <button class="btn back-btn" onclick="closePlayer()">&#8592; Volver</button>
         
-        <button class="btn" onclick="openModal()"><strong> lyric</strong></button>
-         
+        <div class="music-player">
+            <div class="disk"></div>
+            <h1 class="music-name">Cargando...</h1>
+            <p class="artist-name">Cargando...</p>
+
+            <div class="song-sider">
+                <input type="range" value="0" class="seek-bar">
+                <span class="current-time">00:00</span>
+                <span class="song-duration">00:00</span>
+            </div>
+
+            <div class="controls">
+                <button class="btn control-btn backward-btn" onclick="prevMusic()">&#9664;&#9664;</button>
+
+                <button class="play-btn">
+                    <span></span>
+                    <span></span>
+                </button>
+                <button class="btn control-btn forward-btn" onclick="nextMusic()">&#9654;&#9654;</button>
+            </div>
+
+            <button class="btn outline-btn" onclick="openLyrics()"><strong>Letra Completa</strong></button>
+        </div>
     </div>
 
- 
-
-<!-- El modal -->
-<div id="myModal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <H1>11 de Marzo</H1>
-        <p>
-
-        La conocí al final del verano☀️, ahora por discord siempre nos curamos😭, siempre vocea cuando nos peleamos🥊, la mando pal diablo y de una nos calmamo😑.<br> <br>
-
-
-Se que tú🫵 sabe quién eh, siempre sonríes😂 al ver, cada ocurrencia nueva, que a mí me da por hacer😭, yo sé que tú eres feliz😄, y lo tienes que admitir👺, yeeehh (polque..)<br> <br>
-
-
-Eto eh pa que perree a todo volumen🔊 cuando estés limpiando, que de camino🚌 al Itla siempre la estés escuchando🎧, por si algún día de estos ya no terminemos hablando🥴, (no no terminemo  hablando si)<br> <br>
-
-y que tu quiere que te compro Gucci también Ferragamo?🤑, mentira yo no tengo cualto💵 eso era relajado, el viajesito Italia lo estaré esperando🕣, (siempre lo estaré esperando polque..).<br> <br>
-
-
-Polque te quiero🫂🙄,  tu sabes siempre soy sincero🙃, eta canción eh colta polque eto eh lo que 100to👤 
-que de mi corazón ya tu tienes tu porciento❤️‍🩹, aunque me digas q la historias siempre me la invento🙄.<br> <br>
-
-Mmg🤬 siempre que duerme yo te despierto de nuevo🙄, siendo tan pendeja te gustan la movie eh miedo 🧟, yeh (te gustan la movie eh miedo) <br> <br>
-nanananananan, jajaj <br> <br> *la cancion dura lo mismo que mides en cm*</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- LYRICS MODAL -->
+    <div id="lyrics-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLyrics()">&times;</span>
+            <h2 id="modal-title">Letra</h2>
+            <div id="modal-lyrics-text" class="lyrics-text"></div>
+        </div>
     </div>
-</div>
 
+    <!-- Add Audio Element -->
+    <audio src="" id="audio"></audio>
 
-    
-    <script src="script.js"> </script>
-
-
-
+    <script src="script.js"></script>
 </body>
 </html>
