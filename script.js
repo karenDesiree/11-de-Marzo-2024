@@ -43,7 +43,7 @@ Pero mi amor, ¿por qué cerraste la llamada? Yo te llamé porque quería dormir
 
 (Karen voice)
 
-Tenías que decírmelo desde un principio mi amor, pero… ¿qué hacemos entonces? ¿Vamos a dormir juntos sí o no?
+Tenías que decírmelo desde un principio mi amor, pero… ¿qué hacemos ? ¿Vamos a dormir juntos sí o no?
 
 Y es que yo (yo yoo) te quiero aquí en mi cama, baby yo sé que tú me amas, por eso no me aguanto las ganas.
 
